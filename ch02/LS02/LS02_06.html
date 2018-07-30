@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas 绘图基础（绘制弧）</title>
+	<script>
+		window.addEventListener('load', eventWindowLoaded, false);
+
+		function eventWindowLoaded() {
+			canvasApp();
+		}
+
+		function canvasApp() {
+			var theCanvas = document.getElementById('canvas');
+			var context = theCanvas.getContext('2d');
+
+			context.lineWidth = 5;
+			context.strokeStyle = 'blue';
+
+			context.save();
+			context.beginPath();
+
+			context.arc(100, 100, 50, 0, Math.PI); // 默认是顺时针，即默认 anticlockwise 为 false
+			context.arc(100, 100, 50, Math.PI / 2, 0);  // 默认是顺时针
+			context.arc(100, 100, 50, 0, Math.PI, false);
+			context.arc(100, 100, 50, 0, Math.PI, true);
+			context.closePath();
+
+			context.save();
+			context.arc(100, 100, 50, Math.PI, Math.PI * 1.5);
+			context.stroke();
+			context.restore();
+			context.beginPath();
+
+			context.arc(100, 100, 50, Math.PI * 0.5, 0, true);
+			context.stroke();
+			context.restore();
+
+			context.save();
+			context.strokeStyle = '#ff00ff';
+			context.beginPath();  // 虽然调用了 save 和 restore，但不会将当前路径存储为状态的一部分，所以若不 beginPath 描边依然覆盖
+			context.moveTo(100, 200);
+			context.arcTo(300, 200, 300, 300, 100);
+
+			context.stroke();
+			context.closePath();
+			context.restore();
+
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<canvas id="canvas" width="500" height="500" style="border: 2px solid #ccc;">
+			Your browser does not support the HTML 5 Canvas.
+		</canvas>
+	</div>
+</body>
+</html>
