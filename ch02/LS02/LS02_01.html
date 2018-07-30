@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas 画布宽高属性、样式宽高及拉伸效果</title>
+	<script>
+		window.onload = function () {
+			let theCanvas = document.getElementById('canvas');
+
+			// theCanvas.width = 200;
+			// theCanvas.height = 200;
+
+			let context = theCanvas.getContext('2d');
+
+			// console.log(context.canvas.width, context.canvas.height);
+			// console.log(theCanvas.width, theCanvas.height);
+
+			// console.log(context);
+			// console.log(theCanvas);
+
+            // 填充矩形
+			context.fillStyle = '#11ffaa';
+			context.fillRect(0, 0, 100, 100);
+
+            // text
+            context.fillStyle = '#000000';
+            context.font = '20px Sans-Serif';
+            context.textBaseline = 'top';
+            context.fillText('Hello World!', 0, 100);
+
+            context.strokeStyle = '#000000';
+            context.lineWidth = 2;
+            context.strokeRect(0, 0, context.canvas.width, context.canvas.height);
+
+		}
+	</script>
+</head>
+<body>
+	<!-- <canvas id="canvas" style="border: 1px solid #ccc;"></canvas> -->
+	<!-- <canvas id="canvas" width="300" height="150" style="border: 1px solid #ccc;"></canvas> -->
+	<!-- <canvas id="canvas" width="200" height="200" style="border: 1px solid #ccc;"></canvas> -->
+	<canvas id="canvas" width="200px" height="200px" style="width: 300px; height: 150px; border="1px solid #ccc";></canvas>
+</body>
+</html>
