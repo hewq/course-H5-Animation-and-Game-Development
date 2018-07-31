@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas 描边与填充（纯色、渐变色）</title>
+	<script>
+		window.addEventListener('load', eventWindowLoaded, false);
+
+		function eventWindowLoaded() {
+			canvasApp();
+		}
+
+		function canvasApp() {
+			var theCanvas = document.getElementById('canvas');
+			var context = theCanvas.getContext('2d');
+
+			linearGradient();
+			radialGradient();
+
+			function linearGradient() {
+				var lgr = context.createLinearGradient(200, 0, 300, 0);
+				context.lineWidth = 5;
+
+				lgr.addColorStop(0, 'rgb(255, 0, 0)');
+				lgr.addColorStop(0.5, 'rgb(0, 255, 0)');
+				lgr.addColorStop(1, 'rgb(255, 0, 0)');
+
+				context.strokeStyle = lgr;
+				context.strokeRect(200, 200, 100, 100);
+
+				lgr = context.createLinearGradient(200, 200, 300, 300);
+				lgr.addColorStop(0, 'rgb(255, 0, 0)');
+				lgr.addColorStop(1, 'rgb(0, 255, 0)');
+
+				context.fillStyle = lgr;
+				context.fillRect(200 + 20, 200 + 20, 100 - 40, 100 - 40);
+			}
+
+			function radialGradient() {
+				var rgr = context.createRadialGradient(50, 50, 25, 100, 100, 100);
+				rgr.addColorStop(0, 'rgb(255, 0, 0)');
+				rgr.addColorStop(0.5, 'rgb(0, 255, 0)');
+				rgr.addColorStop(1, 'rgb(255, 0, 0)');
+				context.fillStyle = rgr;
+
+				context.arc(100, 100, 100, (Math.PI / 180) * 0, (Math.PI / 180) * 360, false);
+				context.fill();
+
+				context.strokeStyle = rgr;
+				context.arc(100, 100, 50, (Math.PI / 180) * 0, (Math.PI / 180) * 360, false);
+				context.stroke();
+			}
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<canvas id="canvas" width="500" height="500" style="border: 2px solid #ccc;">
+			Your browser does not support the HTML 5 Canvas.
+		</canvas>
+	</div>
+</body>
+</html>
