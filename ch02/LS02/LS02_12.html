@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas 上合成图形</title>
+	<script>
+		window.addEventListener('load', eventWindowLoaded, false);
+
+		function eventWindowLoaded() {
+			canvasApp();
+		}
+
+		function canvasApp() {
+			var theCanvas = document.getElementById('canvas');
+			var context = theCanvas.getContext('2d');
+
+			context.fillStyle = 'black';
+			context.fillRect(10, 10, 200, 200);
+
+			context.fillStyle = 'red';
+			context.fillRect(1, 1, 50, 50);
+
+			context.globalCompositeOperation = 'destination-atop'; // 默认为 source-over
+
+			context.fillRect(60, 1, 100, 100);
+
+			context.globalAlpha = 0.8;
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<canvas id="canvas" width="500" height="500">
+			Your browser does not support the HTML 5 Canvas.
+		</canvas>
+	</div>
+</body>
+</html>
