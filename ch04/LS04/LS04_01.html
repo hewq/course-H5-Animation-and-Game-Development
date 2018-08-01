@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		window.onload = function eventWindowLoaded() {
+			canvasApp();
+		}
+
+		function canvasApp() {
+			var speed = 5;
+			var angle = 45;
+			var radians = angle * Math.PI / 180;
+			var xunits = Math.cos(radians) * speed;
+			var yunits = Math.sin(radians) * speed;
+			var ball = {x: 20, y: 20};
+
+			theCanvas = document.getElementById('canvasOne');
+			context = theCanvas.getContext('2d');
+
+			var count = 0;
+			
+			function drawScreen() {
+				if (count == 1) { // 改变刷新频率
+					count = 0;
+
+					// context.clearRect(0, 0, theCanvas.width, theCanvas.height);
+
+					// 绘制背景
+					context.fillStyle = '#eee';
+					context.fillRect(0, 0, theCanvas.width, theCanvas.height);
+					context.strokeStyl = '#000';
+					context.strokeRect(1, 1, theCanvas.width - 2, theCanvas.height - 2);
+
+					// 新位置
+					ball.x += xunits;
+					ball.y += yunits;
+					context.fillStyle = '#000';
+					context.beginPath();
+					context.arc(ball.x, ball.y, 15, 0, Math.PI * 2, true);
+					context.closePath();
+					context.fill();
+				} else {
+					count++;
+				}
+
+				// 动画循环
+				animationHandle = requestAnimationFrame(drawScreen);
+			}
+
+			// 频率为每秒 60 帧
+			var animationHandle = requestAnimationFrame(drawScreen);
+			document.onclick = function () {
+				if (animationHandle) {
+					cancelAnimationFrame(animationHandle);
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div style="position: absolute; top: 50px; left: 50px;">
+		<canvas id="canvasOne" width="500" height="500">
+			Your browser does not support the HTML 5 Canvas.
+		</canvas>
+	</div>
+</body>
+</html>
