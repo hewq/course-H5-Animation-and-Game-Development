@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'L01' target in the 'L01' project
-//
-
-#ifdef __OBJC__
-	#import <Foundation/Foundation.h>
-	#import <UIKit/UIKit.h>
-#endif
