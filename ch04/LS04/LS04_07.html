@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>抛体运动</title>
+	<script>
+		window.addEventListener('load', eventWindowLoaded, false);
+
+		function eventWindowLoaded() {
+			canvasApp();
+		}
+
+		function canvasApp() {
+			function drawScreen() {
+				context.fillStyle = '#eee';
+				context.fillRect(0, 0, theCanvas.width, theCanvas.height);
+
+				// box
+				context.strokeStyle = '#000';
+				context.strokeRect(1, 1, theCanvas.width -2, theCanvas.height - 2);
+
+				ball.velocityy += gravity;
+				// console.log(ball.velocityy);
+
+				// 碰撞地面，速度反向
+				if ((ball.y + ball.radius) > theCanvas.height) {
+					ball.velocityy = -(ball.velocityy) * ball.elasticity;
+					console.log(ball.velocityy);
+					// ball.velocityy = -6.0;
+				}
+				ball.y += ball.velocityy;
+				ball.x += ball.velocityx;  // 屏蔽此行查看自由落体运动
+
+				context.fillStyle = '#000';
+				context.beginPath();
+				context.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2, true);
+				context.closePath();
+				context.fill();
+				requestAnimationFrame(drawScreen);
+			}
+
+			var speed = 6;
+			var gravity = .1;  // 重力加速度
+			var elasticity = 1;  // 能量损失系数
+			var angle = 285;  // 角度
+			var radians = angle * Math.PI / 180; // 弧度
+			var radius = 15;
+
+			var vx = Math.cos(radians) * speed;
+			var vy = Math.sin(radians) * speed;
+
+			theCanvas = document.getElementById('canvasOne');
+			context = theCanvas.getContext('2d');
+
+			var p1 = { x: 20, y: theCanvas.height - radius };
+			var ball = { x: p1.x, y: p1.y, velocityx: vx, velocityy: vy, radius: radius, elasticity: elasticity};
+
+			var animationHandle = requestAnimationFrame(drawScreen);
+		}
+	</script>
+</head>
+<body>
+	<div style="position: absolute; top: 50px; left: 50px;">
+		<canvas id="canvasOne" width="500" height="500">
+			Your browser does not support the HTML 5 Canvas.
+		</canvas>
+	</div>
+</body>
+</html>
