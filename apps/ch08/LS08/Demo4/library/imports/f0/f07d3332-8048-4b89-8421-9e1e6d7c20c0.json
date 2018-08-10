@@ -1,0 +1,6 @@
+{
+  "__type__": "cc.Asset",
+  "_name": "CocosCompileOptions",
+  "_objFlags": 0,
+  "_native": ".cmake"
+}

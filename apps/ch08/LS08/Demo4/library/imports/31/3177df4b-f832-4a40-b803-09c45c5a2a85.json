@@ -1,0 +1,6 @@
+{
+  "__type__": "cc.Asset",
+  "_name": "ccShader_PositionColorTextureAsPointsize",
+  "_objFlags": 0,
+  "_native": ".vert"
+}

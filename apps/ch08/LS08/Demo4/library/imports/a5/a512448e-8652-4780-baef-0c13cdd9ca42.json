@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "gaf_viewer",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "#drop_zone {    \n    border: 2px dashed #bbb;\n    -moz-border-radius: 5px;\n    -webkit-border-radius: 5px;\n    border-radius: 5px;\n    padding: 25px;\n    text-align: center;\n    font: 20pt bold 'Vollkorn';\n    color: #bbb;\n    \n}\n.renderjson a {\n    text-decoration: none; \n}\n.renderjson .disclosure {\n    color: crimson;\n    font-size: 150%; \n}\n.renderjson .syntax {\n    color: grey; \n}\n.renderjson .string {\n    color: darkred; \n}\n.renderjson .number {\n    color: darkcyan; \n}\n.renderjson .boolean {\n    color: blueviolet; \n}\n.renderjson .key    {\n    color: darkblue; \n}\n.renderjson .keyword {\n    color: blue; \n}\n.renderjson .object.syntax {\n    color: lightseagreen; \n}\n.renderjson .array.syntax  {\n    color: orange; \n}\n"
+}

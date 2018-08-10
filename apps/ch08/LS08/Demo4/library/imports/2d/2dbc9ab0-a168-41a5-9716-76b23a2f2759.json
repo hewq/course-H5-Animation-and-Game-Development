@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "CMakeLists",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "set(SOURCE CCModuleTIFF.cpp)\n\nadd_library(cocostiff STATIC ${SOURCE})\n\ntarget_link_libraries(cocostiff tiff cocos2d)\n\nset_target_properties(cocostiff\n    PROPERTIES\n    ARCHIVE_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n    LIBRARY_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n)\n\n"
+}

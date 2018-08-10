@@ -1,0 +1,6 @@
+{
+  "__type__": "cc.Asset",
+  "_name": "pvmp3_huffman_decoding",
+  "_objFlags": 0,
+  "_native": ".cpp"
+}

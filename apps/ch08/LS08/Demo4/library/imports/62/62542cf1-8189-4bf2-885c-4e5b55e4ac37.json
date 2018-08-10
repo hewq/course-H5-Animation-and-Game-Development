@@ -1,0 +1,13 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "build-cfg",
+  "_objFlags": 0,
+  "_native": "",
+  "json": {
+    "remove_res": [
+      "src",
+      "res",
+      "config.json"
+    ]
+  }
+}

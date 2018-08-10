@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "CMakeLists",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "\nif(WINDOWS AND BUILD_SHARED_LIBS)\n    add_definitions(-D_USE3DDLL)\nendif()\n\nset(COCOS_3D_HEADER\n\n    3d/CCBillBoard.h\n    3d/CCFrustum.h\n    3d/CCSprite3DMaterial.h\n    3d/CCMeshVertexIndexData.h\n    3d/CCPlane.h\n    3d/CCRay.h\n    3d/CCMesh.h\n    3d/CCAnimate3D.h\n    3d/CCTerrain.h\n    3d/CCAnimationCurve.h\n    3d/CCSprite3D.h\n    3d/CCOBB.h\n    3d/CCAnimation3D.h\n    3d/CCMotionStreak3D.h\n    3d/CCSkybox.h\n    3d/CCMeshSkin.h\n    3d/cocos3d.h\n    3d/CCAABB.h\n    3d/CCBundle3D.h\n    3d/CCObjLoader.h\n    3d/CCBundle3DData.h\n    3d/CCSkeleton3D.h\n    3d/CCBundleReader.h\n    3d/CCAttachNode.h\n\n    )\n\nset(COCOS_3D_SRC\n\n    3d/CCAABB.cpp\n    3d/CCAnimate3D.cpp\n    3d/CCAnimation3D.cpp\n    3d/CCAttachNode.cpp\n    3d/CCBillBoard.cpp\n    3d/CCBundle3D.cpp\n    3d/CCBundleReader.cpp\n    3d/CCFrustum.cpp\n    3d/CCMesh.cpp\n    3d/CCMeshSkin.cpp\n    3d/CCMeshVertexIndexData.cpp\n    3d/CCMotionStreak3D.cpp\n    3d/CCOBB.cpp\n    3d/CCObjLoader.cpp\n    3d/CCPlane.cpp\n    3d/CCRay.cpp\n    3d/CCSkeleton3D.cpp\n    3d/CCSkybox.cpp\n    3d/CCSprite3D.cpp\n    3d/CCSprite3DMaterial.cpp\n    3d/CCTerrain.cpp\n\n    )\n"
+}

@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "strings",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "<resources>\n    <string name=\"app_name\">Demo4</string>\n</resources>\n"
+}

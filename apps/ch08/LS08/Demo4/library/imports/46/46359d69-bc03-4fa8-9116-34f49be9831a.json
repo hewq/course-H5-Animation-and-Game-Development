@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "CMakeLists",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "set(CMAKE_CXX_FLAGS \"${CMAKE_CXX_FLAGS} -fexceptions\")\n\nset(FLATBUFFERS_SRC\n./flatc.cpp\n./idl_gen_cpp.cpp\n./idl_gen_fbs.cpp\n./idl_gen_general.cpp\n./idl_gen_go.cpp\n./idl_gen_text.cpp\n./idl_parser.cpp\n)\n\ninclude_directories(\n  ${CMAKE_CURRENT_SOURCE_DIR}\n)\n\nadd_library(flatbuffers STATIC\n  ${FLATBUFFERS_SRC}\n)\n\nset_target_properties(flatbuffers\n    PROPERTIES\n    ARCHIVE_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n    LIBRARY_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n)\n"
+}

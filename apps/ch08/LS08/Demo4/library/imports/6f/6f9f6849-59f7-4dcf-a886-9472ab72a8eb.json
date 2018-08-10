@@ -1,0 +1,6 @@
+{
+  "__type__": "cc.Asset",
+  "_name": "js_bindings_chipmunk_registration",
+  "_objFlags": 0,
+  "_native": ".cpp"
+}

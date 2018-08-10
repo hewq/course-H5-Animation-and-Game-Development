@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "gaf_viewer",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "<!DOCTYPE html>\n<html>\n<head lang=\"en\">\n    <meta charset=\"UTF-8\">\n    <title></title>\n\n    <script src=\"GAFMacros.js\"></script>\n    <script type=\"application/javascript\" src=\"https://rawgit.com/imaya/zlib.js/0.2.0/bin/zlib.min.js\"></script>\n    <script src=\"Library/GAFLoader.js\"></script>\n    <script src=\"Library/GAFTags.js\"></script>\n    <script src=\"Library/GAFDataReader.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"gaf_viewer.css\">\n</head>\n<body>\n<div id=\"drop_zone\">Drop GAF here</div>\n<output id=\"list\"></output>\n\n\n<script src=\"gaf_viewer.js\"></script>\n</body>\n</html>"
+}

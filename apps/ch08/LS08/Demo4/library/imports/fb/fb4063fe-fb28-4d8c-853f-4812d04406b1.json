@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cocos2dx_portrait",
+    "texture": "0487f8e4-20b8-4293-9413-5e54a9a1f491",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      180,
+      250
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      180,
+      250
+    ]
+  }
+}

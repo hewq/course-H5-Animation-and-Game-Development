@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "LICENSE_SpiderMonkey",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "SpiderMonkey is Mozilla's JavaScript engine written in C/C++. It is used in various Mozilla products, including Firefox, and is available under MPL/GPL/LGPL tri-license.\n(from https://developer.mozilla.org/en/SpiderMonkey)\n\n--------\n\nPlease see the file toolkit/content/license.html for the copyright licensing\nconditions attached to this codebase, including copies of the licenses\nconcerned.\n\nYou are not granted rights or licenses to the trademarks of the\nMozilla Foundation or any party, including without limitation the\nFirefox name or logo.\n\nFor more information, see: http://www.mozilla.org/foundation/licensing.html"
+}

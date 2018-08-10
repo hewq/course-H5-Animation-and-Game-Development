@@ -1,0 +1,6 @@
+{
+  "__type__": "cc.Asset",
+  "_name": "CCDownloader-android",
+  "_objFlags": 0,
+  "_native": ".cpp"
+}

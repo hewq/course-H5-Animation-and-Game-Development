@@ -1,0 +1,15 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "config",
+  "_objFlags": 0,
+  "_native": "",
+  "json": {
+    "version": "v3-deps-142",
+    "zip_file_size": "136974507",
+    "repo_name": "cocos2d-x-3rd-party-libs-bin",
+    "repo_parent": "https://github.com/cocos2d/",
+    "move_dirs": {
+      "fbx-conv": "tools"
+    }
+  }
+}

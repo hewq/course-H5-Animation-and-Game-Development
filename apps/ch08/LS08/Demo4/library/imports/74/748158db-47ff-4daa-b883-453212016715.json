@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "missing-tools",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "Git user attention\n\nPlease execute “download-deps.py” to download and install dependencies.\n\n $ cd cocos2d-x\n $ python download-deps.py\n\nPlease execute download-deps.py once you synchronize with this repo. If there aren't any updates, it will not download dependencies again.\n"
+}

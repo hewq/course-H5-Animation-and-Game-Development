@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "CMakeLists",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "set(COCOS_PHYSICS3D_HEADER\n    physics3d/CCPhysics3DConstraint.h\n    physics3d/CCPhysics3DShape.h\n    physics3d/CCPhysics3D.h\n    physics3d/CCPhysics3DWorld.h\n    physics3d/CCPhysicsSprite3D.h\n    physics3d/CCPhysics3DObject.h\n    physics3d/CCPhysics3DComponent.h\n    physics3d/CCPhysics3DDebugDrawer.h\n    )\n\nset(COCOS_PHYSICS3D_SRC\n    physics3d/CCPhysics3D.cpp\n    physics3d/CCPhysics3DComponent.cpp\n    physics3d/CCPhysics3DConstraint.cpp\n    physics3d/CCPhysics3DDebugDrawer.cpp\n    physics3d/CCPhysics3DObject.cpp\n    physics3d/CCPhysics3DShape.cpp\n    physics3d/CCPhysics3DWorld.cpp\n    physics3d/CCPhysicsSprite3D.cpp\n    )\n"
+}

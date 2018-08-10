@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "CMakeLists",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "set(COCOS_PHYSICS_HEADER\n    physics/CCPhysicsContact.h\n    physics/CCPhysicsWorld.h\n    physics/CCPhysicsBody.h\n    physics/cpCompat62.h\n    physics/CCPhysicsShape.h\n    physics/CCPhysicsHelper.h\n    physics/CCPhysicsJoint.h\n    )\n\nset(COCOS_PHYSICS_SRC\n    physics/CCPhysicsBody.cpp\n    physics/CCPhysicsContact.cpp\n    physics/CCPhysicsJoint.cpp\n    physics/CCPhysicsShape.cpp\n    physics/CCPhysicsWorld.cpp\n    )\n"
+}

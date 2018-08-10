@@ -1,0 +1,6 @@
+{
+  "__type__": "cc.Asset",
+  "_name": "btGpu3DGridBroadphaseSharedCode",
+  "_objFlags": 0,
+  "_native": ".h"
+}

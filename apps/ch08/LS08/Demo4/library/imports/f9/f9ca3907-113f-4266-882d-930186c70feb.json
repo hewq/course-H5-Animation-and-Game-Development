@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "README",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "Built from [Ricardo Quesada's Spidermonkey fork](https://github.com/ricardoquesada/Spidermonkey).\n"
+}
