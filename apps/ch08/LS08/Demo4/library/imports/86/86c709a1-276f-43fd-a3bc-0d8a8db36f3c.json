@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "set(SOURCE CCModuleJPEG.cpp)\n\nadd_library(cocosjpeg STATIC ${SOURCE})\n\ntarget_link_libraries(cocosjpeg jpeg cocos2d)\n\nset_target_properties(cocosjpeg\n    PROPERTIES\n    ARCHIVE_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n    LIBRARY_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n)\n\n"
-}

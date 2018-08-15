@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "README",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "fbxconverter version 0.4\nIt is for cocos2d-x after version v3.3\n\nConvert .fbx to .c3t used by cocos2d-x. Thanks to libgdx fbx-conv. We use their code and do some change.\n\nYou can get the source code from the address below:\nhttps://github.com/lvlonggame/cocos2d-x-3rd-party-libs-src \n\nUSAGE:\n\nOpen a command line and enter into the fbx-conv directory, and then input the full path fbx-conv file (you can drag fbx-conv to command line directly) and then enter the parameters -a (-a means export both of c3t and c3b file, if parameter is empty we export c3b file by default), and then enter the file name which you want to convert.\n\nCommand line:\ncd [path of fbx-conv]\nxx/xx/fbx-conv [options] <input>\n\nFor example:\n1. cd /Users/xx/cocos2d-x-3rd-party-libs-bin/fbx-conv/mac\n2. /Users/xx/cocos2d-x-3rd-party-libs-bin/fbx-conv/mac/fbx-conv -a boss.FBX\n\nYou can use the -? option to see more help information.\n\nNote: \n\n1. Model need to have a material that contain one texture in the diffuse-channel at least.\n\t\n2. About animation, we just support skeletal animation.\n\t\n3. Just one skeletal animation object and no support multiple skeleton.\n\t\n4. You can export multiple static model , so you can support a static scene.\n\t\n5. The maximum amount of vertices or indices a mesh should less than 32767.\n"
-}

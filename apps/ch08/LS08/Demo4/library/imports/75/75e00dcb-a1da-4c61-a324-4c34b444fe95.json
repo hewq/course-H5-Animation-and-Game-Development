@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "README",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "# js-bindings\n\nThis repo is used for js bindings.\n"
-}

@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "set(UNZIP_SRC\n  ioapi.cpp\n  unzip.cpp\n  ioapi_mem.cpp\n)\n\nadd_library(unzip STATIC\n  ${UNZIP_SRC}\n)\n\nset_target_properties(unzip\n    PROPERTIES\n    ARCHIVE_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n    LIBRARY_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n)\n\n"
-}

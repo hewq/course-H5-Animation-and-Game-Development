@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "set(COCOS_MATH_HEADER\n    math/Vec2.h\n    math/Mat4.h\n    math/Quaternion.h\n    math/TransformUtils.h\n    math/Vec4.h\n    math/CCAffineTransform.h\n    math/CCGeometry.h\n    math/CCVertex.h\n    math/Vec3.h\n    math/CCMathBase.h\n    math/MathUtil.h\n    math/CCMath.h\n    )\n\nset(COCOS_MATH_SRC\n    math/CCAffineTransform.cpp\n    math/CCGeometry.cpp\n    math/CCVertex.cpp\n    math/Mat4.cpp\n    math/MathUtil.cpp\n    math/Quaternion.cpp\n    math/TransformUtils.cpp\n    math/Vec2.cpp\n    math/Vec3.cpp\n    math/Vec4.cpp\n    )\n"
-}

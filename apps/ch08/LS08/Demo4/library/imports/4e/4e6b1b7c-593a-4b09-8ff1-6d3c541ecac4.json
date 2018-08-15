@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "set(XXHASH\n  xxhash.c\n)\n\nadd_library(xxhash STATIC\n  ${XXHASH}\n)\n\nset_target_properties(xxhash\n    PROPERTIES\n    ARCHIVE_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n    LIBRARY_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n)\n\n"
-}

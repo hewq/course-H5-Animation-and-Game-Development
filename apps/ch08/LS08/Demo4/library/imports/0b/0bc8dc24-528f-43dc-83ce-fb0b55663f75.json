@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "if(NOT IOS)\n    set(COCOS_VR_HEADER\n        vr/CCVRGenericHeadTracker.h\n        vr/CCVRDistortion.h\n        vr/CCVRProtocol.h\n        vr/CCVRGenericRenderer.h\n        vr/CCVRDistortionMesh.h\n        )\n    set(COCOS_VR_SRC\n        vr/CCVRDistortion.cpp\n        vr/CCVRDistortionMesh.cpp\n        vr/CCVRGenericRenderer.cpp\n        vr/CCVRGenericHeadTracker.cpp\n        )\nendif()\n"
-}

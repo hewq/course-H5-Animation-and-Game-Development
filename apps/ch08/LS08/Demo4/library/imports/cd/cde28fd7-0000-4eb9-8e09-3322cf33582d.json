@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "proguard-project",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "# To enable ProGuard in your project, edit project.properties\n# to define the proguard.config property as described in that file.\n#\n# Add project specific ProGuard rules here.\n# By default, the flags in this file are appended to flags specified\n# in ${sdk.dir}/tools/proguard/proguard-android.txt\n# You can edit the include path and order by changing the ProGuard\n# include property in project.properties.\n#\n# For more details, see\n#   http://developer.android.com/guide/developing/tools/proguard.html\n\n# Add any project specific keep options here:\n\n# If your project uses WebView with JS, uncomment the following\n# and specify the fully qualified class name to the JavaScript interface\n# class:\n#-keepclassmembers class fqcn.of.javascript.interface.for.webview {\n#   public *;\n#}\n"
-}

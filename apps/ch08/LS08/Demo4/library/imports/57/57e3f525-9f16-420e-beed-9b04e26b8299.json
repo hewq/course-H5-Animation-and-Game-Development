@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "index",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Cocos2d-html5 Hello World test</title>\n    <link rel=\"icon\" type=\"image/GIF\" href=\"res/favicon.ico\"/>\n    <meta name=\"viewport\" content=\"width=321,user-scalable=no\" />\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\"/>\n    <meta name=\"full-screen\" content=\"yes\"/>\n    <meta name=\"screen-orientation\" content=\"portrait\"/>\n    <meta name=\"x5-fullscreen\" content=\"true\"/>\n    <meta name=\"360-fullscreen\" content=\"true\"/>\n    <style>\n        body, canvas, div {\n            -moz-user-select: none;\n            -webkit-user-select: none;\n            -ms-user-select: none;\n            -khtml-user-select: none;\n            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n        }\n    </style>\n    <script src=\"../CCBoot.js\"></script>\n    <script src=\"main.js\"></script>\n</head>\n<body style=\"padding:0; margin: 0; background: #000;\">\n<script src=\"res/loading.js\"></script>\n<canvas id=\"gameCanvas\" width=\"321\" height=\"480\"></canvas>\n</body>\n</html>"
-}

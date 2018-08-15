@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "if(ANDROID)\n    set(COCOS_NETWORK_HEADER\n        network/CCDownloader-android.h\n        )\n    set(COCOS_NETWORK_SRC\n        network/HttpClient-android.cpp\n        network/SocketIO.cpp\n        network/WebSocket.cpp\n        network/CCDownloader.cpp\n        network/CCDownloader-android.cpp\n        network/Uri.cpp\n        )\nelseif(APPLE)\n    set(COCOS_NETWORK_HEADER\n        network/CCDownloader-apple.h\n        network/HttpAsynConnection-apple.h\n        )\n    set(COCOS_NETWORK_SRC\n        network/CCDownloader-apple.mm\n        network/HttpClient.cpp\n        network/SocketIO.cpp\n        network/WebSocket.cpp\n        network/CCDownloader.cpp\n        network/CCDownloader-curl.cpp\n        network/Uri.cpp\n        )\nelse()\n    set(COCOS_NETWORK_SRC\n        network/HttpClient.cpp\n        network/SocketIO.cpp\n        network/WebSocket.cpp\n        network/CCDownloader.cpp\n        network/CCDownloader-curl.cpp\n        network/Uri.cpp\n        )\nendif()\n\nset(COCOS_NETWORK_HEADER\n    ${COCOS_NETWORK_HEADER}\n    network/CCDownloader-curl.h\n    network/CCIDownloaderImpl.h\n    network/CCDownloader.h\n    network/WebSocket.h\n    network/Uri.h\n    network/SocketIO.h\n    network/HttpClient.h\n    network/HttpResponse.h\n    network/HttpRequest.h\n    network/HttpCookie.h\n    )\n"
-}

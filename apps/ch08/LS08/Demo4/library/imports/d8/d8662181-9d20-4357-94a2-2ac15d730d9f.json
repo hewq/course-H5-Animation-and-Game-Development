@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "set(SOURCE CCModuleWEBP.cpp)\n\nadd_library(cocoswebp STATIC ${SOURCE})\n\ntarget_link_libraries(cocoswebp webp cocos2d)\n\nset_target_properties(cocoswebp\n    PROPERTIES\n    ARCHIVE_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n    LIBRARY_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n)\n\n"
-}

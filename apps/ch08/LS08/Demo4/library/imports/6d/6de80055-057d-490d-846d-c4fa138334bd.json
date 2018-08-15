@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "issue_template",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "- cocos2d-x version:\n- devices test on:\n- developing environments\n   - NDK version:\n   - Xcode version:\n   - VS version:\n   - browser type and version:\n\nSteps to Reproduce:\n\n1. \n2. \n"
-}

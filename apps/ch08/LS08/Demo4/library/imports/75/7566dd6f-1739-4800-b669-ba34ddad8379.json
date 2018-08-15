@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "AndroidManifest",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    package=\"org.cocos2dx.lib\"\n    android:versionCode=\"1\"\n    android:versionName=\"1.0\">\n     \n    <uses-sdk android:minSdkVersion=\"10\"/>\n    \n</manifest> \n"
-}

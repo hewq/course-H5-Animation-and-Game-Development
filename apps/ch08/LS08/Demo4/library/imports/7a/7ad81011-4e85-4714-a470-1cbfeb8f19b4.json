@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "lint",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<lint>\n    <issue id=\"InlinedApi\">\n        <ignore path=\"src/org/cocos2dx/lib/GameControllerHelper.java\" />\n    </issue>\n    <issue id=\"NewApi\">\n        <ignore path=\"src/org/cocos2dx/lib/Cocos2dxActivity.java\" />\n        <ignore path=\"src/org/cocos2dx/lib/GameControllerHelper.java\" />\n    </issue>\n</lint>"
-}

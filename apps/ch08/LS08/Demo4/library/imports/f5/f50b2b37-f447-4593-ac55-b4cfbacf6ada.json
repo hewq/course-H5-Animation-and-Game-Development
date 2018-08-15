@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "set(TREMOLO_SRC\n    ./Tremolo/bitwise.c\n\t./Tremolo/codebook.c\n\t./Tremolo/dsp.c\n\t./Tremolo/floor0.c\n\t./Tremolo/floor1.c\n\t./Tremolo/floor_lookup.c\n\t./Tremolo/framing.c\n\t./Tremolo/mapping0.c\n\t./Tremolo/mdct.c\n\t./Tremolo/misc.c\n\t./Tremolo/res012.c\n\t./Tremolo/treminfo.c\n\t./Tremolo/vorbisfile.c\n)\n\nadd_library(tremolo STATIC\n  ${TREMOLO_SRC}\n)\n\ntarget_compile_definitions(tremolo PRIVATE ONLY_C)\n\nset_target_properties(tremolo\n    PROPERTIES\n    ARCHIVE_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n    LIBRARY_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n    LINKER_LANGUAGE C\n)\n\n"
-}

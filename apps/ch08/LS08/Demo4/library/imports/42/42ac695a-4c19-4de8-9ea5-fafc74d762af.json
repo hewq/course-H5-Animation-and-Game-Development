@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "set(COCOS_DEPRECATED_HEADER\n\n    deprecated/CCDictionary.h\n    deprecated/CCDouble.h\n    deprecated/CCBool.h\n    deprecated/CCDeprecated.h\n    deprecated/CCNotificationCenter.h\n    deprecated/CCString.h\n    deprecated/CCFloat.h\n    deprecated/CCSet.h\n    deprecated/CCInteger.h\n    deprecated/CCArray.h\n    )\n\nset(COCOS_DEPRECATED_SRC\n\n    deprecated/CCArray.cpp\n    deprecated/CCDeprecated.cpp\n    deprecated/CCDictionary.cpp\n    deprecated/CCNotificationCenter.cpp\n    deprecated/CCSet.cpp\n    deprecated/CCString.cpp\n\n    )\n"
-}

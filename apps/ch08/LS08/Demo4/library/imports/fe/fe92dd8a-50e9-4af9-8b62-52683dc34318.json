@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "set(COCOS_NAVMESH_HEADER\n    navmesh/CCNavMeshAgent.h\n    navmesh/CCNavMeshObstacle.h\n    navmesh/CCNavMeshUtils.h\n    navmesh/CCNavMeshDebugDraw.h\n    navmesh/CCNavMesh.h\n    )\n\nset(COCOS_NAVMESH_SRC\n    navmesh/CCNavMesh.cpp\n    navmesh/CCNavMeshAgent.cpp\n    navmesh/CCNavMeshDebugDraw.cpp\n    navmesh/CCNavMeshObstacle.cpp\n    navmesh/CCNavMeshUtils.cpp\n    )\n"
-}

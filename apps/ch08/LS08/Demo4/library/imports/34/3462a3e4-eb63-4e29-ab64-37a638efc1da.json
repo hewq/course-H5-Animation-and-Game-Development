@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "CMakeLists",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "set(RECAST_SRC\nDebugUtils/DebugDraw.cpp\nDebugUtils/DetourDebugDraw.cpp\nDetour/DetourAlloc.cpp\nDetour/DetourCommon.cpp\nDetour/DetourNavMesh.cpp\nDetour/DetourNavMeshBuilder.cpp\nDetour/DetourNavMeshQuery.cpp\nDetour/DetourNode.cpp\nDetourCrowd/DetourCrowd.cpp\nDetourCrowd/DetourLocalBoundary.cpp\nDetourCrowd/DetourObstacleAvoidance.cpp\nDetourCrowd/DetourPathCorridor.cpp\nDetourCrowd/DetourPathQueue.cpp\nDetourCrowd/DetourProximityGrid.cpp\nDetourTileCache/DetourTileCache.cpp\nDetourTileCache/DetourTileCacheBuilder.cpp\nfastlz/fastlz.c\n)\n\ninclude_directories(\n  ..\n)\n\nadd_library(recast STATIC\n  ${RECAST_SRC}\n)\n\nset_target_properties(recast\n    PROPERTIES\n    ARCHIVE_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n    LIBRARY_OUTPUT_DIRECTORY \"${CMAKE_BINARY_DIR}/lib\"\n)\n"
-}

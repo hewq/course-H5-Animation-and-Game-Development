@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "LICENSE_pvmp3dec",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "/* ------------------------------------------------------------------\n * Copyright (C) 1998-2009 PacketVideo\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *      http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either\n * express or implied.\n * See the License for the specific language governing permissions\n * and limitations under the License.\n * -------------------------------------------------------------------\n */\n/*\n------------------------------------------------------------------------------\n\n\nTHIS IS NOT A GRANT OF PATENT RIGHTS.\n\nGoogle makes no representation or warranty that the codecs for which\nsource code is made available hereunder are unencumbered by\nthird-party patents.  Those intending to use this source code in\nhardware or software products are advised that implementations of\nthese codecs, including in open source software or shareware, may\nrequire patent licenses from the relevant patent holders.\n"
-}
