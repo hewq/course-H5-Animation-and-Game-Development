@@ -10,7 +10,7 @@ var Bullet = cc.Sprite.extend({
 		var size = cc.winSize;
 		// 设置位置
 		this.x += this.velocity.x * 0.01;
-		this.y += this.veloctiy.y * 0.01;
+		this.y += this.velocity.y * 0.01;
 		if (this.y > size.height) {
 			cc.pool.putInPool(this);
 		}
@@ -31,8 +31,7 @@ var Bullet = cc.Sprite.extend({
 });
 
 // 子弹类方法， 工厂模式
-Bullet.create = function (spriteFrameName, veloctiy) {
-	console.log(cc.pool);
+Bullet.create = function (spriteFrameName, velocity) {
 	if (cc.pool.hasObject(Bullet)) {
 		cc.log('池子里有————从 pool 里获取');
 		return cc.pool.getFromPool(Bullet, spriteFrameName, velocity);

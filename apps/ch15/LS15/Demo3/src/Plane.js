@@ -5,8 +5,8 @@ var Plane = cc.Sprite.extend({
 	},
 	shoot: function () {
 		// 3个参数，纹理，速度，起始位置
-		// var bullet = Bullet.create(res.CloseNormal_png, cc.p(0, 1280), this.getPosition());
-		var bullet = Bullet.create(res.CloseNormal_png, cc.p(cc.randomMinus1To1() * 640, 1280), this.getPosition());
+		// var bullet = Bullet.create(res.CloseNormal_png, cc.p(0, 1440), this.getPosition());
+		var bullet = Bullet.create(res.CloseNormal_png, cc.p(cc.randomMinus1To1() * 640, 1440), this.getPosition());
 		this.addChild(bullet, -1);
 	}
 });

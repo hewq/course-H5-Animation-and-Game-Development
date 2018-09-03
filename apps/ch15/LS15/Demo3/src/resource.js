@@ -5,8 +5,8 @@ var res = {
 
     p1_png : "res/p1.png",
     p2_png : "res/p2.png",
-    bg1_png : "res/bg1.jpg",
-    bg2_png : "res/bg2.jpg"
+    bg1_jpg : "res/bg1.jpg",
+    bg2_jpg : "res/bg2.jpg"
 };
 
 var g_resources = [];

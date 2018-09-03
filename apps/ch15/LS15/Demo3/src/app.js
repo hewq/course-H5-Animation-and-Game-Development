@@ -32,7 +32,7 @@ var HelloWorldLayer = cc.Layer.extend({
 
         var bg2 = new cc.Sprite(res.bg1_jpg);
         bg2.x = cc.winSize.width / 2;
-        bg2.y = cc.winSize.height / + bg.getBoundingBox().height;
+        bg2.y = cc.winSize.height / 2 + bg.getBoundingBox().height;
         this.addChild(bg2);
         this.arr[1] = bg2;
 
